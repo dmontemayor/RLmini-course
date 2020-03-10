@@ -1,0 +1,6 @@
+pylint
+pytest
+-e git+https://github.com/dmontemayor/CRPM.git@master#egg=crpm
+scipy
+matplotlib
+progressbar
