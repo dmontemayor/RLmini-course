@@ -5,10 +5,8 @@ A reinforcement learning mini-course in 4 lectures. RL theory with practicum mat
 It is recomended you install in some kind of self contained environment so your
 python settings don't get messed with. There are a few options such as
 [virtualenv](http://pypi.org/project/virtualenv)
-or [conda](https://docs.conda.io/projects/conda/en/latest/) which we will walk
-you through now.
+or [conda](https://docs.conda.io/projects/conda/en/latest/) which we will walk you through in a bit.
 
-## (Option 1) Setup a virtual environment with virtualenv
 Before you go any further, make sure you have Python and that it’s available
 from your command line. You can check this by simply running:
 ```
@@ -24,9 +22,35 @@ If you installed Python from source, with an installer from
 [python.org](python.org), or via [Homebrew](https://brew.sh/) you should already
 have pip. If you’re on Linux and installed using your OS package manager, you may have to install pip separately.
 
+
+# Install with Makefile (Recomended)
+A Makefile is provided to make building, installation, and running the code easy. It uses virtualenv to create a virtual environment for you.
+If you activated your virtual environment go ahead and deactivate it.
+This Makefile will only rebuild the virtual environment if changes are made to
+the requirements file.
+Make sure the virtual environment is deactivated and install with the command.
+```
+make
+```
+To run a specific example use the command.
+```
+make example
+```
+Devs can test the code with the command
+```
+make test
+```
+
+
+## (Option 1) Setup a virtual environment with virtualenv
+
 [venv](https://docs.python.org/3/library/venv.html) is a tool to create isolated
 Python environments. venv creates a folder which contains all the
 necessary executables to use the packages that a Python project would need.
+
+
+
+
 
 1. Create a virtual environment named 'venv' for this project in this
 project's directory:
@@ -97,23 +121,4 @@ conda deactivate
 + To remove the environment, use
 ```
 conda env remove -n venv
-```
-
-
-# Install with Makefile
-A Makefile is provided to make building, installation, and running the code easy.
-If you activated your virtual environment go ahead and deactivate it.
-This Makefile will only rebuild the virtual environment if changes are made to
-the requirements file.
-Make sure the virtual environment is deactivated and install with the command.
-```
-make
-```
-To run a specific example use the command.
-```
-make example
-```
-Devs can test the code with the command
-```
-make test
 ```
