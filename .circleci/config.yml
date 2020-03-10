@@ -12,7 +12,10 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ./manage.py test
+          command: |
+            . venv/bin/activate
+            pylint rlmini
+            pytest tests
           name: Test
 
 workflows:
