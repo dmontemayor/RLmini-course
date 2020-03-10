@@ -13,7 +13,6 @@ jobs:
       - python/save-cache
       - run:
           command: |
-            . venv/bin/activate
             pylint rlmini
             pytest tests
           name: Test
