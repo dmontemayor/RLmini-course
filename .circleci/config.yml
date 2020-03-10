@@ -13,8 +13,8 @@ jobs:
       - python/save-cache
       - run:
           command: |
-            pylint rlmini
-            pytest tests
+            python -m pylint rlmini
+            python -m pytest tests
           name: Test
 
 workflows:
