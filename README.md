@@ -6,6 +6,16 @@
 
 A reinforcement learning mini-course in 4 lectures. RL theory with practicum material in Python. Covers tabular and functional methods, including online deep Q learning, and offline off-policy methods. We will be following Sutton and Barto 2018 some what closely. The text book is licenced under the [Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License](http://creativecommons.org/licenses/by-nc-nd/2.0/). You can find a copy of the text book in the `docs` folder.
 
+#Lecture Topics
+1. Bandits, Action Value Methods, and Non-Stationary Targets
+2. Dynamic Programming, Monte Carlo, and Temporal Difference Learning
+3. Artifical Neural Networks
+4. Put it all together for Deep Reinforcement Learning
+
+I encourage you to be prepared to discuss specific datasets/research questions
+you may be facing so that we can think about how to best cast as an RL implementation. 
+
+
 # Getting Started
 It is recomended you work in some kind of self contained environment so your
 python settings don't get messed with. There are a few options such as
