@@ -1,4 +1,9 @@
 # RLmini-course
+
+![CircleCI](https://img.shields.io/circleci/build/github/dmontemayor/RLmini-course?logo=CircleCI)
+![GitHub last commit](https://img.shields.io/github/last-commit/dmontemayor/RLmini-course?logo=github)
+![GitHub](https://img.shields.io/github/license/dmontemayor/RLmini-course)
+
 A reinforcement learning mini-course in 4 lectures. RL theory with practicum material in Python. Covers tabular and functional methods, including online deep Q learning, and offline off-policy methods. We will be following Sutton and Barto 2018 some what closely. The text book is licenced under the [Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License](http://creativecommons.org/licenses/by-nc-nd/2.0/). You can find a copy of the text book in the `docs` folder.
 
 # Getting Started
