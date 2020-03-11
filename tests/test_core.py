@@ -1,4 +1,4 @@
-"""test fibonacci function from core
+"""test crpm package is installed properly
 """
 from .context import rlmini
 

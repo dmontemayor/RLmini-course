@@ -9,7 +9,7 @@ test: venv
 	. venv/bin/activate; pylint rlmini ; pytest tests
 
 example: venv
-	. venv/bin/activate; python3 example.py
+	. venv/bin/activate; python3 rlmini/example.py
 
 clean:
 	rm -rf venv
