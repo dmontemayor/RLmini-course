@@ -11,6 +11,9 @@ test: venv
 example: venv
 	. venv/bin/activate; python3 rlmini/example.py
 
+snake: venv
+	. venv/bin/activate; python3 rlmini/snake.py
+
 clean:
 	rm -rf venv
 	rm -rf src
