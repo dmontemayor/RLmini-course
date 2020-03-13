@@ -2,7 +2,6 @@
 
 import random
 import curses
-#import numpy as np
 
 def snakegame():
     """Snake Game rendered with ascii characters
@@ -49,6 +48,11 @@ def snakegame():
 
     #main game loop
     while alive:
+
+        window.refresh()
+        #display score
+        window.addstr(0, 0, str(score))
+
         #get action input
         next_key = window.getch()
         #Note: next_key will = -1 if no key is pressed

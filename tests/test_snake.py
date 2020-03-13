@@ -2,7 +2,7 @@
 """
 from .context import rlmini
 
-#this test doesn't work because of curses module
+#this test doesn't work because of curses
 def bad_test_snake_score():
     """ test snake game will end and return 0 if do nothing"""
     from rlmini.snake import snakegame

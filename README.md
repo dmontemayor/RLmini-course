@@ -22,7 +22,7 @@ python settings don't get messed with. There are a few options such as
 [venv](https://docs.python.org/3/library/venv.html)
 or [conda](https://docs.conda.io/projects/conda/en/latest/) which we will walk you through in a bit.
 
-# Install with Makefile (Recomended)
+# Install with Makefile (Recomended for Linux & MacOS)
 Before you go any further, make sure you have Python and that it’s available
 from your command line. You can check this by simply running:
 ```
@@ -68,20 +68,31 @@ make test
 ```
 I trust you can take it from there.
 
-## I hate Makefiles and want to manually setup my virtual environment (Not Recomended!)
+## I hate Makefiles and want to manually setup my virtual environment ...actually I'm a Windows user
 
 ### (Option 1) Setup a virtual environment with venv
 
 [venv](https://docs.python.org/3/library/venv.html) is a tool to create isolated
 Python environments. venv creates a folder which contains all the
-necessary executables to use the packages that a Python project would need.
-
+necessary executables our project would need. It does this by reading the
+dependancies we ask for in the requirements.txt file. One of those dependancies
+is the deep learning software I developed for the Center for Renal Precision
+Medicine here at UT Health that is hosted on github. So you need to [install git](https://git-scm.com/downloadshttps://git-scm.com/downloads). Check you have git installed.
+```
+git --version
+```
+Also make sure you have pip installed and up to date.
+```
+pip install --upgrade pip
+```
+Now let's make the virtual environment.
 1. Create a virtual environment named 'venv' for this project in this
 project's directory:
 ```
 cd path/to/this/project
 python3 -m venv venv
 ```
+
 2. For MacOS & Linux - Activate the virtual environment to begin using it:
 ```
 source venv/bin/activate
@@ -96,12 +107,22 @@ different command. Assuming that you are in your project directory the command i
 ```
 C:\Users\SomeUser\project_folder> venv\Scripts\activate
 ```
-3. Everyone - To deactivate the virtual environment use the command.
+
+3. Now Let's install the requirements declared in the requirements.txt file.
+```
+pip install - r requirements.txt
+```
+Windows users you will have to install an additional package. ...of course you do!
+```
+pip install windows-curses
+```
+
+4. Everyone - To deactivate the virtual environment use the command.
 ```
 deactivate
 ```
 
-### (Option 2) Setup a virtual environment with conda
+### (Option 2 - Not Recomended!) Setup a virtual environment with conda
 The conda package and environment manager is included in all versions of
 [Anaconda](https://docs.conda.io/projects/conda/en/latest/glossary.html#anaconda-glossary),
 [Miniconda](https://docs.conda.io/projects/conda/en/latest/glossary.html#miniconda-glossary),
