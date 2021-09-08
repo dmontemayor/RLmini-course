@@ -1,0 +1,4 @@
+layer,n,activation,lreg,regval
+0,2,linear,2,0
+1,100,logistic,2,0
+2,4,linear,2,0
